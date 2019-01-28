@@ -13,12 +13,11 @@ nav{
 nav ul{
 	list-style-type: none;
 	padding: 0;
-		/*display: inline-block;*/
-
 }
 
 nav ul li{
 	vertical-align: middle;
+	float: left;
 }
 
 nav a{
@@ -26,6 +25,7 @@ nav a{
 	color: #62697A;
 	font-size: 18px;
 	margin: 10px;
+	font-weight: 200;
 }
 
 nav a:hover{
