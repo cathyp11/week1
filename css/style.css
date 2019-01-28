@@ -29,11 +29,11 @@ nav a{
 }
 
 nav a:hover{
-	color: #FF7F50;
+	color: #8C2837;
 }
 
 nav .active{
-	color: #FF7F50;
+	color: #8C2837;
 	font-weight: 900;
 }
 
