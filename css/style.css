@@ -52,6 +52,16 @@ nav .logo img{
 	height: 100%;
 }
 
+/*main*/
+.grids{
+	display: flex;
+}
+.icons{
+	width: 40%; 
+}
+figcaption{
+	text-align: center;
+}
 /*gallery*/
 .gallery img{
 	width: 50%;
