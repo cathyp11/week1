@@ -5,7 +5,6 @@ body{
 	font-family: poppins,sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	/*background-image: linear-gradient(#f4f4f4, #fff);*/
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -83,6 +82,27 @@ main{
 }
 
 /*index*/
+.heading{
+	height: 400px;
+	position: relative;
+	background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(../images/banner.jpg);
+    background-size: cover;
+}
+/*.heading>div{
+	height: 300px;
+	width: 50%;
+	background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45));
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}*/
+.heading>h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 .grids{
 	display: -webkit-box;
 	display: -ms-flexbox;
