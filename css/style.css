@@ -4,6 +4,8 @@ body{
 	font-family: poppins,sans-serif;
 	font-weight: 400;
 	font-style: normal;
+	/*background-color: #cccccc;*/
+	background-image: linear-gradient(#ddd6f3,#faaca8);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -111,6 +113,7 @@ figcaption{
 	grid-gap: 5px;
 	justify-content: center;
 	justify-items: center;
+	background-color: #d6ae7b;
 }
 .gallery>div{
 	width: auto;
