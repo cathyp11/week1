@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
+
 body{
 	font-family: poppins,sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	background: linear-gradient(360deg, #efefef 10%, #f4f4f4 360%)
+	background-image: linear-gradient(#f4f4f4, #fff);
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -83,8 +84,12 @@ main{
 
 /*index*/
 .grids{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .grids a{
 	text-decoration: none;
@@ -107,8 +112,10 @@ figcaption{
 .gallery{
 	width: 100%;
 	margin:0 auto;
+	display: -ms-grid;
 	display: grid;
-	grid-template-columns: auto auto auto auto;
+	-ms-grid-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
 	grid-gap: 5px;
 	justify-content: center;
 	justify-items: center;
@@ -127,7 +134,11 @@ figcaption{
 /*about*/
 .about{
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+    justify-content: center;
+	-ms-flex-item-align: center;
+    -ms-grid-row-align: center;
 	align-self: center;
 }
 
