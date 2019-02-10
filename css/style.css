@@ -5,7 +5,7 @@ body{
 	font-weight: 400;
 	font-style: normal;
 	/*background-color: #cccccc;*/
-	background-image: linear-gradient(#ddd6f3,#faaca8);
+	background: linear-gradient(360deg, #dee1e1 10%, #f4f4f4 360%)
 }
 
 h1,h2,h3,h4,h5,h6{
