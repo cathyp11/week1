@@ -1,9 +1,26 @@
 @charset "UTF-8";
 
 body{
-	font-family: proxima-nova,sans-serif;
+	font-family: poppins,sans-serif;
 	font-weight: 400;
 	font-style: normal;
+}
+
+h1,h2,h3,h4,h5,h6{
+	text-align: center;
+}
+
+#wrap{
+	margin: 30px auto;
+    overflow-y: hidden;
+}
+
+.skip{
+	color: transparent;
+}
+
+.skip:focus{
+	color: initial;
 }
 
 /*nav*/
@@ -14,6 +31,7 @@ nav{
 nav ul{
 	list-style-type: none;
 	padding: 0;
+	/*float: right;*/
 }
 
 nav ul li{
@@ -36,6 +54,7 @@ nav a:hover{
 nav .active{
 	color: #8C2837;
 	font-weight: 900;
+	border-bottom: 2px solid;
 }
 
 nav .nav-right{
@@ -53,25 +72,80 @@ nav .logo img{
 }
 
 /*main*/
+main{
+	padding: 20px;
+	margin: auto 100px;
+}
+#content p{
+	margin: 40px auto;
+}
+
+/*index*/
 .grids{
 	display: flex;
+	justify-content: center;
+}
+.grids a{
+	text-decoration: none;
+	color: #000;
 }
 .icons{
-	width: 40%; 
+	width: 100px;
+	display: block;
+    margin: 0 auto; 
+}
+.grids .icons{
+	width: 200px;
 }
 figcaption{
 	text-align: center;
+	margin-top: 10px;
 }
+
 /*gallery*/
+.gallery{
+	width: 100%;
+	margin:0 auto;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 5px;
+	justify-content: center;
+	justify-items: center;
+}
+.gallery>div{
+	width: auto;
+	margin: 0 auto;
+}
 .gallery img{
-	width: 50%;
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	text-align: center;
 }
-
 /*about*/
-.me {
-	width: 50%;
+.about{
+	display: flex;
+	justify-content: center;
+	align-self: center;
 }
 
+.me {
+	width: 400px;
+	height: 50%;
+}
+
+.about p{
+	padding-left: 50px;
+}
+
+.about p:last-child{
+	margin: 0;
+	font-size: 30px;
+}
+
+.about a{
+	color: #000;
+}
 /*footer*/
 .centerBlock{
 	display: table;
