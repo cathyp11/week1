@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /*nav*/
+
 nav{
 	padding: 25px 15px;
 }
@@ -70,6 +71,7 @@ nav .logo img{
 	width: 100px;
 	height: 100%;
 }
+
 
 @media only screen and (max-width: 600px) {
 	nav a{
@@ -136,7 +138,7 @@ figcaption{
 
 @media only screen and (max-width: 600px) {
 	.heading h1{
-		font-size: 25px;
+		font-size: 27px;
 		padding: 20px;
 	}
 	main{
@@ -169,6 +171,18 @@ figcaption{
 	padding: 10px;
 	text-align: center;
 }
+
+@media only screen and (max-width: 600px) {
+	.gallery{
+		-ms-grid-columns: auto auto;
+	    grid-template-columns: auto auto;
+	}
+	.gallery img{
+		width: 150px;
+		height: 150px;
+	}
+
+}
 /*about*/
 .about{
 	display: flex;
@@ -178,6 +192,7 @@ figcaption{
 	-ms-flex-item-align: center;
     -ms-grid-row-align: center;
 	align-self: center;
+	align-items: center;
 }
 
 .me {
@@ -197,6 +212,22 @@ figcaption{
 .about a{
 	color: #000;
 }
+
+@media only screen and (max-width: 600px) {
+	.me{
+		width: 300px;
+	}
+	.about{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+        flex-direction: column;
+	}
+	.about p{
+		padding-left: 0;
+	}
+}
+
 /*footer*/
 .centerBlock{
 	display: table;
