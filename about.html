@@ -11,14 +11,15 @@
 </head>
 <body>
 	<div id="wrap">
-		<nav>
-			<a class="skip" href="#content">Skip to Content</a>
-			<ul>
-				<li><a href="/week1">Cities</a></li>
-				<li><a href="annarbor">Ann Arbor</a></li>
-				<li><a href="seoul">Seoul</a></li>
-				<li><a class="active" href="#">About</a></li>
-			</ul>
+		<a class="skip" href="#content">Skip to Content</a>
+		<nav class="navbar" id="topnav">
+				<a href="/week1">Cities</a>
+				<a href="annarbor">Ann Arbor</a>
+				<a class="active" href="#">Seoul</a>
+				<a href="about">About</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
 		</nav>
 		<header>
 			<h1>About</h1>
@@ -44,5 +45,15 @@
 	        </div>
 		</footer>
 	</div>
+	<script>
+	function myFunction() {
+		var x = document.getElementById("topnav");
+		if (x.className === "navbar") {
+			x.className += " responsive";
+		} else {
+			x.className = "navbar";
+		}
+	}
+	</script>
 </body>
 </html>
